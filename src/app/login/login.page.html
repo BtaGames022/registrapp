@@ -1,0 +1,45 @@
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Inicio de Session</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+  
+    <ion-card class="ion-text-center">
+      <img alt="Silhouette of mountains" src="../../assets/img/Logo.webp" />
+      <ion-card-header>
+        <ion-card-title class="ion-text-center"></ion-card-title>
+        <ion-card-title>Inicio de Sesion</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        
+
+        <ion-item>
+          <ion-label position="floating">Correo Electrónico</ion-label>
+          <ion-input [(ngModel)]="email" type="email"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+      
+        <ion-button expand="block" color="primary" (click)="login()">
+          Iniciar Sesión
+        </ion-button>
+
+        <ion-text color="tertiary" class="ion-text-center">
+          <h3>¿olvidaste tu contraseña?</h3>
+        </ion-text>
+
+          <ion-button fill="clear" (click)="goRecu()">Recuperar contraseña</ion-button>
+          <br>
+        
+
+        
+      </ion-card-content>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Duoc uc</ion-title>
+    <ion-button slot="end"(click)="goBack()">Atras</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="../../assets/img/Logo.webp" />
+    <ion-card-header>
+      <ion-card-title>Lista de Usuarios</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-item *ngFor="let usuario of usuarios">
+        <ion-label>
+          <h2>{{ usuario.nombre }}</h2>
+          <p>Email: {{ usuario.correo }}</p>
+        </ion-label>
+        <ion-button slot="end" color="primary" (click)="editUsuario(usuario.id)">
+          Editar
+        </ion-button>
+        <ion-button slot="end" color="danger" (click)="deleteUsuario(usuario.id)">
+          Eliminar
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Lista de Profesores</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-item *ngFor="let profesor of profesores">
+        <ion-label>
+          <h2>{{ profesor.nombre }}</h2>
+          <p>Email: {{ profesor.correo }}</p>
+        </ion-label>
+        <ion-button slot="end" color="primary" (click)="editProfesor(profesor.id)">
+          Editar
+        </ion-button>
+        <ion-button slot="end" color="danger" (click)="deleteProfesor(profesor.id)">
+          Eliminar
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

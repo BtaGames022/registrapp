@@ -1,20 +1,39 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Duoc uc</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card class="ion-text-center" >
+    <img alt="Silhouette of mountains" src="../../assets/img/Logo.webp" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center"></ion-card-title>
+      <ion-card-title>Programa de aistencia</ion-card-title>
+      <ion-card-title>Ingresar como Estudiante/Profesor</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+
+
+    <ion-card-content>
+      <ion-button (click)="Alumno()">
+        Entrar como Alumno
+      </ion-button>
+      <br>
+      <br>
+      <ion-button (click)="Profesor()">
+        Entrar como Profesor
+      </ion-button>
+      <br>
+      <br>
+    <ion-button (click)="cerrarSesion()">
+      Cerrar Sesión
+    </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+
+
+

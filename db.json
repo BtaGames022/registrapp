@@ -1,0 +1,81 @@
+{
+  "usuario": [
+      {
+          "id": 1,
+          "nombre": "Ana Perez",
+          "edad": 22,
+          "correo": "ana.perez@duocuc.cl",
+          "password": "moon1234"
+          
+        },
+        {
+          "id": 2,
+          "nombre": "Luis Gomez",
+          "edad": 23,
+          "correo": "luis.gomez@duocuc.cl",
+          "password": "star5678"
+          
+        },
+        {
+          "id": 3,
+          "nombre": "Maria Fernandez",
+          "edad": 21,
+          "correo": "maria.fernandez@duocuc.cl",
+          "password": "cloud234"
+          
+        },
+        {
+          "id": 4,
+          "nombre": "Carlos Sanchez",
+          "edad": 24,
+          "correo": "carlos.sanchez@duocuc.cl",
+          "password": "rain9876"
+          
+        },
+        {
+          "id": 5,
+          "nombre": "Elena Ruiz",
+          "edad": 22,
+          "correo": "elena.ruiz@duocuc.cl",
+          "password": "tree4321"
+          
+        }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "Jose Martinez",
+      "edad": 45,
+      "correo": "jose.martinez@profesorduoc.cl",
+      "password": "wind8765"
+      
+    },
+    {
+      "id": 2,
+      "nombre": "Laura Garcia",
+      "edad": 39,
+      "correo": "laura.garcia@profesorduoc.cl",
+      "password": "sunny345"
+      
+    },
+    {
+      "id": 3,
+      "nombre": "Miguel Torres",
+      "edad": 50,
+      "correo": "miguel.torres@profesorduoc.cl",
+      "password": "river678"
+      
+    }
+  ],
+  "Admin":[
+    {
+      "id": 1,
+      "nombre": "AdminSJ",
+      "edad": 21,
+      "correo": "Admin.SJ@duoc.cl",
+      "password": "Admin123"
+    }
+  ]
+
+
+}
